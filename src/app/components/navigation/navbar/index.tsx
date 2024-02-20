@@ -1,10 +1,10 @@
-import Logo from '../../icons/Logo';
-import { SearchIcon } from '../../icons/SearchIcon';
 import { CategoryIcon } from '../../icons/CategoryIcon';
 import { DiscountIcon } from '../../icons/DiscountIcon';
+import Logo from '../../icons/Logo';
+import { NotificationIcon } from '../../icons/NotificationIcon';
+import { SearchIcon } from '../../icons/SearchIcon';
 import { VerticalBar } from '../../icons/VerticalBar';
 import { SearchBar } from '../../searchbar/SearchBar';
-import { NotificationIcon } from '../../icons/NotificationIcon';
 
 const Navbar = () => {
   const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (

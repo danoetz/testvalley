@@ -1,6 +1,6 @@
-import React from 'react';
-import Image, { ImageProps } from 'next/image';
 import clsx from 'clsx';
+import Image, { ImageProps } from 'next/image';
+import React from 'react';
 
 interface NotificationIconProps extends Omit<ImageProps, 'src' | 'alt'> {
   className?: string;

@@ -7,16 +7,16 @@ const Logo = () => {
       <Image
         src='/logo/logo.svg'
         alt='Logo'
-        width={'128'}
-        height={'25'}
+        width='128'
+        height='25'
         className='relative hidden lg:inline-block'
       />
 
       <Image
         src='/logo/logo-mobile.svg'
         alt='Logo'
-        width={'126'}
-        height={'48'}
+        width='126'
+        height='48'
         className='relative lg:hidden'
       />
     </Link>

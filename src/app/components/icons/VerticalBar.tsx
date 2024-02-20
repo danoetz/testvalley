@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 export const VerticalBar = () => {
   return (
@@ -8,7 +8,7 @@ export const VerticalBar = () => {
       alt='Vertical Bar'
       width={1}
       height={14}
-      className={'relative'}
+      className='relative'
     />
   );
 };
