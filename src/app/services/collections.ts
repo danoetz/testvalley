@@ -42,6 +42,7 @@ export const getCollections = async (): Promise<{
           rating: item.publication.rating,
           preface: item.publication.preface,
           prefaceIconUrl: item.publication.prefaceIconUrl,
+          productUrl: `https://testvalley.kr/product/` + item.publication.code,
         }),
     );
 
@@ -80,6 +81,8 @@ export const getCollections = async (): Promise<{
             rating: item.publication.rating,
             preface: item.publication.preface,
             prefaceIconUrl: item.publication.prefaceIconUrl,
+            productUrl:
+              'https://testvalley.kr/product/' + item.publication.code,
           }),
       );
       const dataCollection = new ItemCollectionData({
