@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint src --fix && pnpm format",
+    "format": "prettier --write .",
+    "format:check": "prettier -c .",
     "prepare": "husky"
   },
   "dependencies": {

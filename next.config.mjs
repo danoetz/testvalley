@@ -4,6 +4,16 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'dvd6ljcj7w3pj.cloudfront.net',
+        port: '',
+        pathname: '/static/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

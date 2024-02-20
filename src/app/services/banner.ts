@@ -1,17 +1,8 @@
 import axios, { AxiosError } from 'axios';
 
+import { handleAxiosError } from './errorHandler';
 import { BANNER_URL } from '../commons/configs';
 import { BannerProps } from '../commons/types/banner';
-
-const handleAxiosError = (
-  error: AxiosError<any>,
-): { status: number; data: any } => {
-  if (error?.response) {
-    return { status: error?.response?.status, data: error?.response?.data };
-  } else {
-    return { status: 500, data: { message: 'Internal Server Error' } };
-  }
-};
 
 export const getBannerList = async (): Promise<{
   status: number;

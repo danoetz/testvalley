@@ -4,9 +4,22 @@
 
 body {
   color: #333333;
-  background: #f6fafb;
+  background: '#f6fafb';
   height: 100%;
   width: 100%;
+}
+
+.text-shortcut {
+  font-size: 13px;
+  color: '#333333';
+}
+
+.wrapper {
+  max-width: 420px;
+}
+
+.wrapper-bg {
+  background-color: #f6fafb;
 }
 
 .navbar {
@@ -16,10 +29,23 @@ body {
 }
 
 @media (min-width: 960px) {
+  body {
+    color: #333333;
+    background: '#ffffff';
+    height: 100%;
+    width: 100%;
+  }
+
   .navbar {
     height: 72px;
     max-width: 100%;
     border-bottom: 1px solid #eeeeee;
-    background-color: white;
+    background-color: #ffffff;
+  }
+  .wrapper {
+    max-width: 960px;
+  }
+  .wrapper-bg {
+    background-color: #ffffff;
   }
 }

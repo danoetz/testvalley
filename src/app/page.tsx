@@ -4,11 +4,14 @@ import Image from 'next/image';
 
 import Banner from '@/app/modules/banner/index';
 
+import MainShortcuts from './modules/main_shortcuts';
+
 export default function Page() {
   return (
-    <main className='flex flex-col wrapper mx-auto justify-between gap-10'>
+    <main className='flex flex-col bg-white wrapper mx-auto justify-between'>
       <Banner />
-      <div className='flex flex-col items-center px-24 gap-10'>
+      <MainShortcuts />
+      <div className='flex flex-col items-center'>
         <Image
           className='relative dark:drop-shadow-[0_0_0.3rem_#00000070] dark:invert'
           src='/next.svg'
