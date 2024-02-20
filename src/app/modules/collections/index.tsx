@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { IsBreakpoint } from '@/app/commons/helpers';
 import { ItemCollectionData } from '@/app/commons/types/collections';
-import { ItemComponent } from '@/app/components/ItemComponent';
+import { ItemComponent } from '@/app/modules/collections/ItemComponent';
 import { getCollections } from '@/app/services/collections';
 
 import { CollectionComponent } from './CollectionComponent';

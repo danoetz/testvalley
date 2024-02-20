@@ -3,13 +3,14 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import clsx from 'clsx';
 import { useRef } from 'react';
 import { Swiper as SwiperType } from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { ItemCollectionData } from '@/app/commons/types/collections';
-import { ItemComponent } from '@/app/components/ItemComponent';
+import { ItemComponent } from '@/app/modules/collections/ItemComponent';
 
 interface CollectionComponentProps {
   collectionData?: ItemCollectionData;
@@ -35,13 +36,21 @@ export const CollectionComponent: React.FC<CollectionComponentProps> = ({
           <div className='flex flex-row gap-x-9'>
             <button onClick={() => swiperRef.current?.slidePrev()}>
               <FontAwesomeIcon
-                className='text-default-400'
+                className={clsx(
+                  swiperRef.current?.allowSlidePrev
+                    ? 'text-default-400'
+                    : 'text-default-100',
+                )}
                 icon={faChevronLeft}
               />
             </button>
             <button onClick={() => swiperRef.current?.slideNext()}>
               <FontAwesomeIcon
-                className='text-default-400'
+                className={clsx(
+                  swiperRef.current?.allowSlideNext
+                    ? 'text-default-400'
+                    : 'text-default-100',
+                )}
                 icon={faChevronRight}
               />
             </button>
