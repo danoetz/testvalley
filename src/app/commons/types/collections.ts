@@ -10,6 +10,7 @@ export class ItemCollection {
   rating: number;
   preface: string;
   prefaceIconUrl: string;
+  productUrl: string;
 
   constructor(data: Partial<ItemCollection>) {
     this.imageUrl = data.imageUrl || '';
@@ -23,6 +24,7 @@ export class ItemCollection {
     this.rating = data.rating || 0;
     this.preface = data.preface || '';
     this.prefaceIconUrl = data.prefaceIconUrl || '';
+    this.productUrl = data.productUrl || '';
   }
 }
 

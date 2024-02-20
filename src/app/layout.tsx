@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -19,11 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <div className='bg-default-50'>
-          <Navigation />
-        </div>
-        <div className='bg-default-50 lg:bg-white'>{children}</div>
+      <body className={clsx(inter.className, 'bg-default-50')}>
+        <Navigation />
+        <div className='lg:bg-white'>{children}</div>
       </body>
     </html>
   );
