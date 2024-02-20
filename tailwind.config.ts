@@ -28,6 +28,7 @@ const config: Config = {
           900: '#000000',
         },
         orange: '#ff5023',
+        error: '#eb1c1c',
       },
     },
     screens: {
