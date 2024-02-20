@@ -1,9 +1,8 @@
 'use client';
 
-import Image from 'next/image';
-
 import Banner from '@/app/modules/banner/index';
 
+import Collections from './modules/collections';
 import MainShortcuts from './modules/main_shortcuts';
 
 export default function Page() {
@@ -11,25 +10,8 @@ export default function Page() {
     <main className='flex flex-col bg-white wrapper mx-auto justify-between'>
       <Banner />
       <MainShortcuts />
-      <div className='flex flex-col items-center'>
-        <Image
-          className='relative dark:drop-shadow-[0_0_0.3rem_#00000070] dark:invert'
-          src='/next.svg'
-          alt='Next.js Logo'
-          width={180}
-          height={37}
-          priority
-        />
-        <div className='h-[1000px]'></div>
-        <Image
-          className='relative dark:drop-shadow-[0_0_0.3rem_#00000070] dark:invert'
-          src='/next.svg'
-          alt='Next.js Logo'
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Collections />
+      <section className='h-96'></section>
     </main>
   );
 }
