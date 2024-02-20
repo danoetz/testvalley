@@ -51,16 +51,18 @@ export default function Banner() {
       >
         {banners.map((banner, i) => (
           <SwiperSlide key={i}>
-            <img
-              src={banner.pcImageUrl}
-              alt={`Banner ${i + 1}`}
-              className='hidden lg:flex'
-            />
-            <img
-              src={banner.mobileImageUrl}
-              alt={`Banner ${i + 1}`}
-              className='lg:hidden'
-            />
+            <a href={banner.linkUrl}>
+              <img
+                src={banner.pcImageUrl}
+                alt={`Banner ${i + 1}`}
+                className='hidden lg:flex'
+              />
+              <img
+                src={banner.mobileImageUrl}
+                alt={`Banner ${i + 1}`}
+                className='lg:hidden'
+              />
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>
